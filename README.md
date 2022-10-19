@@ -82,4 +82,8 @@ React Router Concepts
 #Single Product /
 #Product Routing /
 #User Login
+#Welcome Message
 #Protected Route for dashboard
+
+#create horizontal product card
+#add price badge of each product

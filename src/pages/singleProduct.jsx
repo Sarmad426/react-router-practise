@@ -7,12 +7,19 @@ const SingleProduct = () => {
   const products = productData.find(
     (product) => product.id === parseInt(productId)
   );
-  const { name, img } = products;
+  const { name, img, price } = products;
   return (
-    <div className="single-product">
-      <img src={img} alt="No logo found" />
-      <h3>{name}</h3>
-
+    <div>
+      <div className="single-product">
+        <img src={img} alt="No logo found" />
+        <div>
+          <h3>{name}</h3>
+          <div className="card-badge">
+            <span className="badge">${price}</span>
+            <button className="buy">Buy</button>
+          </div>
+        </div>
+      </div>
       <Link to="/products" className="btn">
         Back to products
       </Link>
